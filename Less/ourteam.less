@@ -1,0 +1,54 @@
+
+
+// all the introduction cards
+
+.team{
+    background-color:@main-color;
+    .displayFlex(row, space-evenly, center);
+    border-top-left-radius:25px;
+    border-bottom-right-radius: 25px;
+    border:1px solid @black;
+    margin:@space-inside;
+
+ &:nth-child(odd) {
+    flex-direction: row-reverse;          
+} // this closes nt child pseudo
+
+
+
+ .team-img {
+    width:40%;    
+    height:30vh;
+    width: 35%;
+    margin:1%;
+    
+
+ img {
+    height:100%;
+    border-radius: 5px;
+    
+ }   
+}// this closes .tean-img
+
+.team-info {
+    width: 50%;
+    text-align: center; 
+        
+p {
+    font-size: 1.8rem;
+    font-family: @mainfont;
+}    
+}// this closes team-info
+
+} // this closes .team
+
+
+
+
+
+
+
+
+
+
+ 
