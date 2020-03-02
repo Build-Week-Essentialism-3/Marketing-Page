@@ -85,7 +85,7 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 1px solid green;
+  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -125,4 +125,146 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header .Logo {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+header .Logo img {
+  width: 10%;
+}
+header .Logo h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  width: 50%;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  background-color: aliceblue;
+  padding: 2%;
+  border-radius: 25%;
+}
+.body-wrapper {
+  max-width: 970px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+#quote {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#quote #about-quote {
+  text-align: center;
+  width: 75%;
+  font-size: 50px;
+  padding: 3% 0;
+  border-top: 1px solid black;
+  margin: 3% 0;
+}
+.About {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 5% 0 0 0;
+}
+.About #what {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 3% 0;
+}
+.About #what img {
+  width: 25%;
+  border-radius: 15%;
+}
+.About #what .What-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.About #what .What-text h2 {
+  font-size: 35px;
+  padding: 2% 0;
+  border-bottom: 1px solid black;
+}
+.About #what .What-text p {
+  font-size: 30px;
+}
+.About #what .What-text a {
+  width: 30%;
+}
+.About #who {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  margin: 5% 0;
+}
+.About #who img {
+  width: 40%;
+  border-radius: 15%;
+}
+.About #who .Who-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-right: 1px solid black;
+}
+.About #who .Who-text h2 {
+  font-size: 25px;
+}
+.About #who .Who-text p {
+  font-size: 20px;
+}
+.About #who .Who-text a {
+  width: 30%;
+}
+.About #why {
+  display: flex;
+  justify-content: space-evenly;
+}
+.About #why img {
+  width: 40%;
+  border-radius: 10%;
+}
+.About #why .Why-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-left: 1px solid black;
+  padding-left: 10px;
+}
+.About #why .Why-text h2 {
+  font-size: 25px;
+}
+.About #why .Why-text p {
+  font-size: 20px;
+}
+.About #why .Why-text a {
+  width: 30%;
+  align-self: flex-end;
 }
