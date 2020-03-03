@@ -145,6 +145,14 @@ header .Logo h1 {
   font-size: 55px;
   width: 50%;
 }
+@media (max-width: 500px) {
+  header .Logo {
+    justify-content: space-around;
+  }
+  header .Logo h1 {
+    font-size: 25px;
+  }
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -158,6 +166,11 @@ nav a {
   border-radius: 25%;
   border: 1px solid black;
 }
+@media (max-width: 500px) {
+  nav {
+    width: 90%;
+  }
+}
 .body-wrapper {
   max-width: 970px;
   width: 50%;
@@ -166,18 +179,28 @@ nav a {
   margin: 0 auto;
   font-family: 'Montserrat', sans-serif;
 }
+@media (max-width: 800px) {
+  .body-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .body-wrapper {
+    width: 100%;
+  }
+}
 #quote {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 #quote #about-quote {
-  width: 75%;
-  padding: 3% 0;
-  border-top: 1px solid black;
-  margin: 3% 0;
   text-align: center;
   font-size: 50px;
+  width: 75%;
+  border-top: 1px solid black;
+  padding: 3% 0;
+  margin: 3% 0;
 }
 .About {
   display: flex;
@@ -185,7 +208,6 @@ nav a {
   flex-direction: column;
   text-align: center;
   margin: 5% 0 0 0;
-  font-family: 'Montserrat', sans-serif;
 }
 .About #what {
   width: 100%;
@@ -232,6 +254,19 @@ nav a {
   color: black;
   font-size: large;
 }
+@media (max-width: 800px) {
+  .About #what {
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 90%;
+  }
+  .About #what img {
+    display: none;
+  }
+  .About #what .What-text {
+    width: 75%;
+  }
+}
 .About #who {
   width: 100%;
   display: flex;
@@ -259,6 +294,20 @@ nav a {
 .About #who .Who-text a {
   width: 30%;
 }
+@media (max-width: 500px) {
+  .About #who {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .About #who img {
+    width: 75%;
+  }
+  .About #who .Who-text {
+    width: 80%;
+    padding-bottom: 2%;
+    border: none;
+  }
+}
 .About #why {
   display: flex;
   justify-content: space-evenly;
@@ -284,4 +333,19 @@ nav a {
 .About #why .Why-text a {
   width: 30%;
   align-self: flex-end;
+}
+@media (max-width: 500px) {
+  .About #why {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .About #why img {
+    width: 75%;
+  }
+  .About #why .Why-text {
+    width: 80%;
+    padding-bottom: 2%;
+    padding-left: 0;
+    border: none;
+  }
 }
