@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #quote {
@@ -12,13 +13,12 @@
     flex-direction: column;
 
     #about-quote {
-        text-align: center;
-        width: 75%;
-        font-size: 50px;
-        padding: 3% 0;
-        border-top: 1px solid black;
-        // border-bottom: 1px solid black;
-        margin: 3% 0;
+        // width: 75%;
+        // padding: 3% 0;
+        // border-top: 1px solid black;
+        // margin: 3% 0;
+        .quoteStyle(center, 50px);
+        .quoteShape(75%, 1px solid red, 3% 0, 3% 0);
     }
     
 }
@@ -29,6 +29,7 @@
     flex-direction: column;
     text-align: center;
     margin: 5% 0 0 0;
+    font-family: 'Montserrat', sans-serif;
     #what {
         width: 100%;
         display: flex;
@@ -53,10 +54,26 @@
                 border-bottom: 1px solid black;
             }
             p {
-                font-size: 30px;
+                font-size: 25px;
             }
             a {
                 width: 30%;
+            }
+            button {
+                background: aliceblue;
+                border: 1px solid black;
+                border-radius: 10px;
+                margin-top: 2%;
+                width: 100%;
+                padding: 2% 0;
+                font-family: 'Montserrat', sans-serif;
+        
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    font-size: large;
+                }
             }
         }
     }
