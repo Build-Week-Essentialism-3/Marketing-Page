@@ -6,7 +6,12 @@
   }
 
 html {
-    font-size: 62.5%;       
+    font-size: 62.5%;  
+    
+@media @tablet {
+    font-size: 50%;
+}    
+
 }
 
 body {
@@ -14,30 +19,39 @@ body {
 }
 
 h1, h2, h3, h4 {
-    margin: @space-inside;
+    margin: 10px;
     font-weight:bold;
     font-family:@hfont;
+    padding: 1%;
 }
+
 h1 {
-    font-size: 4rem;
+    font-size: 2.8rem;   
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     
 }
 
 h3 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 h4 {
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .body-wrapper {
-    width:50%;
+    width:60%;
     margin:0 auto;
+
+@media @tablet {
+    width: 80%;
+}    
+
 }
+
+
 
 
 
