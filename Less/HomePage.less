@@ -83,6 +83,10 @@
             align-items: center;
             width: 90%;
 
+            #attrLink {
+                opacity: 0%;
+            }
+
             img {
                 display: none;
             }
@@ -90,12 +94,17 @@
             .What-text {
                 width: 75%;
             }
+
+            
         }// tablet closes here
 
         @media @phone {
             #attrLink {
                 width: 40%;
-            }
+                align-self: center;
+                // display: none;
+                opacity: 0%;
+            }//phone closes here
         }
     }
 

@@ -261,6 +261,9 @@ nav a {
     align-items: center;
     width: 90%;
   }
+  .About #what #attrLink {
+    opacity: 0%;
+  }
   .About #what img {
     display: none;
   }
@@ -271,6 +274,8 @@ nav a {
 @media (max-width: 500px) {
   .About #what #attrLink {
     width: 40%;
+    align-self: center;
+    opacity: 0%;
   }
 }
 .About #who {
