@@ -126,10 +126,29 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.body-wrapper {
+  max-width: 970px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+@media (max-width: 800px) {
+  .body-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .body-wrapper {
+    width: 100%;
+  }
+}
 header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: auto;
 }
 header .Logo {
   display: flex;
@@ -169,24 +188,6 @@ nav a {
 @media (max-width: 500px) {
   nav {
     width: 90%;
-  }
-}
-.body-wrapper {
-  max-width: 970px;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  font-family: 'Montserrat', sans-serif;
-}
-@media (max-width: 800px) {
-  .body-wrapper {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .body-wrapper {
-    width: 100%;
   }
 }
 #quote {
@@ -333,7 +334,7 @@ nav a {
   flex-direction: column;
   justify-content: space-evenly;
   border-left: 1px solid black;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 .About #why .Why-text h2 {
   font-size: 1.5em;
@@ -371,7 +372,7 @@ nav a {
 .Newsletter-info h2 {
   width: 50%;
   border-top: 1px solid black;
-  padding: 1% 0;
+  padding: 0;
   font-size: 3em;
 }
 .Newsletter-info p {
