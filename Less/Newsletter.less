@@ -7,18 +7,35 @@
     margin-top: 2%;
 
     h2 {
-        font-size: 35px;
         width: 50%;
-        border-top: 1px solid black;
-        padding-top: 1%;
+        .newsHeading(@blackBorder, 1% 0, 3em);
     }
 
     p {
-        width: 50%;
+        width: 40%;
         padding-top: 2%;
-        font-size: 20px;
+        padding-bottom: 2%;
+        font-size: 1.8em;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black
     }
-}
+    @media @tablet {
+        h2 {
+            width: 90%;
+        }//h2 closes here
+
+        p {
+            width: 80%;
+        }
+    }//@tablet closes here
+
+    @media @phone {
+        
+        p {
+            font-size: 1.5em;
+        }
+    }
+}//.NewsLetter-info closes here
 
 form {
     display: flex;
@@ -28,27 +45,30 @@ form {
     font-family: 'Montserrat', sans-serif;
     margin-top: 2%;
 
-    input {
-        width: 50%;
-    }
-
-    #fname {
+    #fname, #lname {
         width: 10%;
     }
 
-    #lname {
+    #email, #phone {
+        width: 20%;
+    }
+
+    button {
+        .newsButton(1%, 10px, @blackBorder);
         width: 10%;
     }
 
-    #email {
-        width: 20%;
-    }
+    @media @tablet {
+        #fname, #lname {
+            width: 25%;
+        }
 
-    #phone {
-        width: 20%;
-    }
+        #email, #phone {
+            width: 35%;
+        }
 
-    #message {
-        padding: 5% 0;
-    }
-}
+        button {
+            width: 20%;
+        }
+    }//@tablet closes here
+}// Form closes here

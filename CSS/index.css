@@ -358,15 +358,31 @@ nav a {
   margin-top: 2%;
 }
 .Newsletter-info h2 {
-  font-size: 35px;
   width: 50%;
   border-top: 1px solid black;
-  padding-top: 1%;
+  padding: 1% 0;
+  font-size: 3em;
 }
 .Newsletter-info p {
-  width: 50%;
+  width: 40%;
   padding-top: 2%;
-  font-size: 20px;
+  padding-bottom: 2%;
+  font-size: 1.8em;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+@media (max-width: 800px) {
+  .Newsletter-info h2 {
+    width: 90%;
+  }
+  .Newsletter-info p {
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .Newsletter-info p {
+    font-size: 1.5em;
+  }
 }
 form {
   display: flex;
@@ -376,21 +392,30 @@ form {
   font-family: 'Montserrat', sans-serif;
   margin-top: 2%;
 }
-form input {
-  width: 50%;
-}
-form #fname {
-  width: 10%;
-}
+form #fname,
 form #lname {
   width: 10%;
 }
-form #email {
-  width: 20%;
-}
+form #email,
 form #phone {
   width: 20%;
 }
-form #message {
-  padding: 5% 0;
+form button {
+  padding: 1%;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 10%;
+}
+@media (max-width: 800px) {
+  form #fname,
+  form #lname {
+    width: 25%;
+  }
+  form #email,
+  form #phone {
+    width: 35%;
+  }
+  form button {
+    width: 20%;
+  }
 }

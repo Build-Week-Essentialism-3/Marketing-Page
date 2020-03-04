@@ -24,3 +24,17 @@
     padding: @pad;
     margin: @margin;
 }
+
+// Newsletter mixins
+
+.newsHeading(@borderColor, @pad, @textSize) {
+    border-top: @borderColor;
+    padding: @pad;
+    font-size: @textSize;
+}
+
+.newsButton(@pad, @bRadius, @border){
+    padding: @pad;
+    border-radius: @bRadius;
+    border: @border;
+}
