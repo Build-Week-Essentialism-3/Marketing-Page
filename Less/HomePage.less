@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    font-family: 'Montserrat', sans-serif;
+    font-family: @montserrat;
 
     @media @tablet {
         width: 100%;
@@ -52,19 +52,18 @@
             justify-content: center;
             justify-content: space-evenly;
             h2 {
-                font-size: 35px;
-                padding: 2% 0;
-                border-bottom: 1px solid black;
+                .whatHeader(2.7em, 2% 0, @blackBorder);
             }
             p {
-                font-size: 25px;
+                font-size: 1.6em;
+                padding-bottom: 3%;
             }
             a {
                 width: 30%;
             }
             button {
                 background: aliceblue;
-                border: 1px solid black;
+                border: @blackBorder;
                 border-radius: 10px;
                 margin-top: 2%;
                 width: 100%;
@@ -91,6 +90,12 @@
             .What-text {
                 width: 75%;
             }
+        }// tablet closes here
+
+        @media @phone {
+            #attrLink {
+                width: 40%;
+            }
         }
     }
 
@@ -113,10 +118,10 @@
             justify-content: space-evenly;
             border-right: 1px solid black;
             h2 {
-                font-size: 25px;
+                font-size: 1.5em;
             }
             p {
-                font-size: 20px;
+                font-size: 1.3em;
             }
             a {
                 width: 30%;
@@ -155,10 +160,10 @@
             border-left: 1px solid black;
             padding-left: 10px;
             h2 {
-                font-size: 25px;
+                font-size: 1.5em;
             }
             p {
-                font-size: 20px;
+                font-size: 1.3em;
             }
             a {
                 width: 30%;

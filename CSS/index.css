@@ -229,12 +229,13 @@ nav a {
   justify-content: space-evenly;
 }
 .About #what .What-text h2 {
-  font-size: 35px;
+  font-size: 2.7em;
   padding: 2% 0;
   border-bottom: 1px solid black;
 }
 .About #what .What-text p {
-  font-size: 25px;
+  font-size: 1.6em;
+  padding-bottom: 3%;
 }
 .About #what .What-text a {
   width: 30%;
@@ -267,6 +268,11 @@ nav a {
     width: 75%;
   }
 }
+@media (max-width: 500px) {
+  .About #what #attrLink {
+    width: 40%;
+  }
+}
 .About #who {
   width: 100%;
   display: flex;
@@ -286,10 +292,10 @@ nav a {
   border-right: 1px solid black;
 }
 .About #who .Who-text h2 {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .About #who .Who-text p {
-  font-size: 20px;
+  font-size: 1.3em;
 }
 .About #who .Who-text a {
   width: 30%;
@@ -325,10 +331,10 @@ nav a {
   padding-left: 10px;
 }
 .About #why .Why-text h2 {
-  font-size: 25px;
+  font-size: 1.5em;
 }
 .About #why .Why-text p {
-  font-size: 20px;
+  font-size: 1.3em;
 }
 .About #why .Why-text a {
   width: 30%;
