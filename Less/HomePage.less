@@ -1,0 +1,185 @@
+
+
+#quote {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    #about-quote {
+        .quoteStyle(center, 50px);
+        .quoteShaping(75%, 1px solid black, 3% 0, 3% 0);
+    }
+    
+}
+
+.About {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 5% 0 0 0;
+    #what {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        padding: 3% 0;
+
+        img {
+            width: 25%;
+            border-radius: 15%;
+        }
+        .What-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-content: space-evenly;
+            h2 {
+                .whatHeader(2.7em, 2% 0, @blackBorder);
+            }
+            p {
+                font-size: 1.6em;
+                padding-bottom: 3%;
+            }
+            a {
+                width: 30%;
+            }
+            button {
+                background: aliceblue;
+                border: @blackBorder;
+                border-radius: 10px;
+                margin-top: 2%;
+                width: 100%;
+                padding: 2% 0;
+                font-family: 'Montserrat', sans-serif;
+        
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    font-size: large;
+                }
+            }
+        }
+        @media @tablet {
+            flex-direction: column-reverse;
+            align-items: center;
+            width: 90%;
+
+            #attrLink {
+                opacity: 0%;
+            }
+
+            img {
+                display: none;
+            }
+
+            .What-text {
+                width: 75%;
+            }
+
+            
+        }// tablet closes here
+
+        @media @phone {
+            #attrLink {
+                width: 40%;
+                align-self: center;
+                // display: none;
+                opacity: 0%;
+            }//phone closes here
+        }
+    }
+
+    #who {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        margin: 5% 0;
+
+        img {
+            width: 40%;
+            border-radius: 15%;
+        }
+
+        .Who-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-right: @blackBorder;
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1.3em;
+            }
+            a {
+                width: 30%;
+            }
+        }
+
+        @media @phone {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            img {
+                width: 75%;
+            }
+
+            .Who-text {
+                width: 80%;
+                padding-bottom: 2%;
+                border: none;
+            }
+        }
+    }
+
+    #why {
+        display: flex;
+        justify-content: space-evenly;
+        img {
+            width: 40%;
+            border-radius: 10%;
+        }
+
+        .Why-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-left: @blackBorder;
+            padding-left: 0px;
+            h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1.3em;
+            }
+            a {
+                width: 30%;
+                align-self: flex-end;
+            }
+        }
+
+        @media @phone {
+            flex-direction: column-reverse;
+            align-items: center;
+
+            img {
+                width: 75%;
+            }
+
+            .Why-text {
+                width: 80%;
+                padding-bottom: 2%;
+                padding-left: 0;
+                border: none;
+            }
+        }
+
+    }
+}
