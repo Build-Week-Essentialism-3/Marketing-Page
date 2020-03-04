@@ -1,5 +1,23 @@
 // form
 
 .form-container {
-    background-color: red;
+    width: 60%;
+    height: 80vh;
+    margin: 0 auto;
+    background-color:@main-color;
+    border:1px solid @black;
+    .displayFlex(row, center, center);
+    
+
+form {
+   height: 70vh;
+   .displayFlex(column, space-evenly, flex-start);
+   flex-wrap: wrap;
+    
+
+input {
+    width: 40%;
+  
+}    
+} // this closes form   
 }

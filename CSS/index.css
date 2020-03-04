@@ -242,5 +242,24 @@ footer p {
   font-family: 'Montserrat';
 }
 .form-container {
-  background-color: red;
+  width: 60%;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: #f0f8ff;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.form-container form {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.form-container form input {
+  width: 40%;
 }
