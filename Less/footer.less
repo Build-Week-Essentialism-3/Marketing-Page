@@ -3,9 +3,42 @@
 footer {
    text-align: center;
    margin: @space-outside auto;
-   background-color:#bde0ff;   
+   background-color:#a4d4ff; 
+   height: 8%;
+   width: 100%;
+   font-family: @mainfont;    
+ .displayFlex(row, space-evenly, center);
+   margin-bottom: 0;
 
 p {
     font-size: 2.5rem;
-}    
+    margin-left:1%;
+}  
+
+
+
+
+.twitter {
+     
+   .displayFlex(row, space-evenly, center);
+    width: 20%;
+
+p {
+   font-size: 1.5rem;
+}// this closes p tag inside .twitter  
+
+span {
+a {
+      text-decoration: none;
+i {
+        color:@black;
+
+&:hover {
+         color:@white;
+      }//this closes hover   
+      }//this closes i tag
+   }//this closes a tag
 }
+}//this closes .twitter
+
+}//this closes footer

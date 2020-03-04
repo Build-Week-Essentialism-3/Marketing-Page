@@ -1,23 +1,151 @@
-// form
-
-.form-container {
+  
+//header  
+header {
     width: 60%;
-    height: 80vh;
+    margin:0 auto;
+    text-align: center;  
+    
+@media @mobile {
+    width: 100%;   
+}     
+}
+
+
+
+
+
+// form
+.form-container {
+    width: 70%;
+    height: 90vh;
     margin: 0 auto;
     background-color:@main-color;
-    border:1px solid @black;
-    .displayFlex(row, center, center);
+    .styleInputs();
     
+    
+
+@media @tablet {
+    width: 80%;
+} 
+
+@media @mobile {
+    width: 100%; 
+    height: 130vh;
+    
+}
+   
+    
+input {
+    width: 100%;     
+    height: 35%; 
+    .styleInputs();
+    padding:@space-outside;
+    font-family: @mainfont;         
+}  
+
+   
 
 form {
-   height: 70vh;
-   .displayFlex(column, space-evenly, flex-start);
+   height: 100%;
+   .displayFlex(row, space-evenly, center);
    flex-wrap: wrap;
+   font-family: @hfont;
+   font-size: 1.5rem;
+
+@media @mobile {
+    .displayFlex(column, space-evenly, center);    
+
+}   
+
+.input {
+   
+    .displayFlex(column, space-evenly, center);
+    height: 10vh;
+    width: 45%;
+    margin: 1%;
+    padding:1%; 
+    border-radius:5px; 
+    
+@media @mobile {
+    width: 80%;
+}   
+     
+}   
+
+
+
+.options {
+    .displayFlex(column, center, center);
+    width: 100%;    
+    height: 10vh;   
+    
+select {
+    width: 50%;
+    .styleInputs();
+    padding:1%;
+    font-family: @mainfont;
+    
+@media @mobile {
+    width: 80%;
+}    
+    
+}    
+}
+
+.textarea {
+   
+    height:35%;
+    .displayFlex(column, center, center);  
+
+p {
+     text-align: center;       
+     width: 80%; 
+     margin-bottom: @space-outside;        
+        
+}      
+    
     
 
-input {
-    width: 40%;
-  
+textarea{
+    width: 80%;
+    resize: none;
+    font-family: @mainfont;
+    .styleInputs();
+    outline-style:none;
+
 }    
-} // this closes form   
 }
+
+.button {
+    width: 80%;  
+    .displayFlex(column, center, center);
+    height: 10%;
+    
+
+}
+
+button {
+    width:50%; 
+    background-color:@black; 
+    color:@white;
+    padding:@space-inside;  
+    .styleInputs();
+    font-family: @mainfont;
+    font-size: 1.5rem;
+
+    @media @mobile {
+        width: 60%;
+    }     
+
+&:hover {
+    color:@black;
+    background-color: @white;
+}    
+}
+
+  
+    
+
+   
+} // this closes form   
+}// this closes form container
