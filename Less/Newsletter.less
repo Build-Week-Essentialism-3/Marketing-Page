@@ -1,0 +1,75 @@
+
+.Newsletter-info {
+    font-family: @montserrat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2%;
+
+    h2 {
+        width: 50%;
+        .newsHeading(@blackBorder, 0, 3em);
+    }
+
+    p {
+        width: 40%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 1.8em;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+    @media @tablet {
+        h2 {
+            width: 90%;
+        }//h2 closes here
+
+        p {
+            width: 80%;
+        }
+    }//@tablet closes here
+
+    @media @phone {
+        
+        p {
+            font-size: 1.5em;
+        }
+    }
+}//.NewsLetter-info closes here
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 2%;
+
+    #fname, #lname {
+        width: 10%;
+    }
+
+    #email, #phone {
+        width: 20%;
+    }
+
+    button {
+        .newsButton(1%, 10px, @blackBorder);
+        width: 10%;
+    }
+
+    @media @tablet {
+        #fname, #lname {
+            width: 25%;
+        }
+
+        #email, #phone {
+            width: 35%;
+        }
+
+        button {
+            width: 20%;
+        }
+    }//@tablet closes here
+}// Form closes here

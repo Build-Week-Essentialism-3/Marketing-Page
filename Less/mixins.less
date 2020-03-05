@@ -1,3 +1,4 @@
+
 .displayFlex(@direction, @justify, @align){
     display: flex;
     flex-direction: @direction;
@@ -9,5 +10,55 @@
     border: 1px solid @black;
     border-radius: 5px;
     
+}
+
+
+
+// navigation mixins
+.navText(@decoration, @color, @background){
+    text-decoration: @decoration;
+    color: @color;
+    background-color: @background;
+}
+
+.navShape(@pad, @bRadius, @border){
+    padding: @pad;
+    border-radius: @bRadius;
+    border: @border;
+}
+
+// home page mixins
+.quoteStyle(@align, @fontSize) {
+    text-align: @align;
+    font-size: @fontSize;
+}
+
+.quoteShaping(@width, @bTop, @pad, @margin){
+    width: @width;
+    border-top: @bTop;
+    padding: @pad;
+    margin: @margin;
+}
+
+    //what-text styling
+
+    .whatHeader(@fontSize, @pad, @border){
+        font-size: @fontSize;
+        padding:@pad;
+        border-bottom: @border;
+    }
+
+// Newsletter mixins
+
+.newsHeading(@borderColor, @pad, @textSize) {
+    border-top: @borderColor;
+    padding: @pad;
+    font-size: @textSize;
+}
+
+.newsButton(@pad, @bRadius, @border){
+    padding: @pad;
+    border-radius: @bRadius;
+    border: @border;
 }
 
