@@ -203,7 +203,7 @@ header .Logo {
   justify-content: center;
 }
 header .Logo img {
-  width: 10%;
+  width: 15%;
 }
 header .Logo h1 {
   display: flex;
@@ -228,7 +228,7 @@ header .Logo h1 {
 nav {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 70%;
 }
 nav a {
   text-decoration: none;
@@ -237,6 +237,7 @@ nav a {
   padding: 2%;
   border-radius: 25%;
   border: 1px solid black;
+  font-size: 1.5em;
 }
 @media (max-width: 500px) {
   nav {
@@ -493,6 +494,9 @@ header {
   padding: 3% 0;
   margin: 3% 0;
 }
+#quote p {
+  font-size: 2em;
+}
 .About {
   display: flex;
   align-items: center;
@@ -520,7 +524,7 @@ header {
   justify-content: space-evenly;
 }
 .About #what .What-text h2 {
-  font-size: 2.7em;
+  font-size: 3em;
   padding: 2% 0;
   border-bottom: 1px solid black;
 }
@@ -593,10 +597,10 @@ header {
   border-right: 1px solid black;
 }
 .About #who .Who-text h2 {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 .About #who .Who-text p {
-  font-size: 1.3em;
+  font-size: 2em;
 }
 .About #who .Who-text a {
   width: 30%;
@@ -629,13 +633,13 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   border-left: 1px solid black;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 .About #why .Why-text h2 {
-  font-size: 1.5em;
+  font-size: 3em;
 }
 .About #why .Why-text p {
-  font-size: 1.3em;
+  font-size: 2em;
 }
 .About #why .Why-text a {
   width: 30%;
@@ -668,13 +672,13 @@ header {
   width: 50%;
   border-top: 1px solid black;
   padding: 0;
-  font-size: 3em;
+  font-size: 5em;
 }
 .Newsletter-info p {
   width: 40%;
   padding-top: 2%;
   padding-bottom: 2%;
-  font-size: 1.8em;
+  font-size: 2em;
   border-bottom: 1px solid black;
   border-top: 1px solid black;
 }
@@ -697,6 +701,7 @@ form {
   align-items: center;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
   margin-top: 2%;
 }
 form #fname,
