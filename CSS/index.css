@@ -660,6 +660,9 @@ header {
     border: none;
   }
 }
+footer {
+  padding: 1% 0;
+}
 .Newsletter-info {
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -717,11 +720,15 @@ form button {
   border-radius: 10px;
   border: 1px solid black;
   width: 10%;
+  margin-bottom: 1%;
 }
 @media (max-width: 800px) {
+  form label {
+    margin: 3%;
+  }
   form #fname,
   form #lname {
-    width: 25%;
+    width: 1%;
   }
   form #email,
   form #phone {
@@ -739,5 +746,18 @@ form button {
   form #email,
   form #phone {
     width: 35%;
+  }
+}
+@media (max-width: 500px) {
+  form label {
+    margin: 5% 0;
+  }
+  form #fname,
+  form #lname {
+    width: 40%;
+  }
+  form #email,
+  form #phone {
+    width: 60%;
   }
 }

@@ -58,11 +58,16 @@ form {
     button {
         .newsButton(1%, 10px, @blackBorder);
         width: 10%;
+        margin-bottom: 1%;
     }
 
     @media @tablet {
+
+        label {
+            margin: 3%;
+        }
         #fname, #lname {
-            width: 25%;
+            width: 1%;
         }
 
         #email, #phone {
@@ -82,5 +87,19 @@ form {
         #email, #phone {
             width: 35%;
         }
+    }// desktop closes here
+
+    @media @phone {
+        label {
+            margin: 5% 0;
+        }
+        #fname, #lname {
+            width: 40%;
+        }
+
+        #email, #phone {
+            width: 60%;
+        }
+        
     }
 }// Form closes here
