@@ -285,6 +285,19 @@ footer .twitter span a i {
 footer .twitter span a i:hover {
   color: #fff;
 }
+.team-intro {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.team-intro h1 {
+  margin-top: 10%;
+}
+@media (max-width: 500px) {
+  .team-intro {
+    width: 100%;
+  }
+}
 .team {
   background-color: #f0f8ff;
   display: flex;
@@ -343,14 +356,23 @@ footer .twitter span a i:hover {
   font-size: 1.8rem;
   font-family: 'Montserrat';
 }
-header {
+.form-message {
   width: 60%;
   margin: 0 auto;
   text-align: center;
 }
+.form-message h1 {
+  margin-top: 5%;
+}
 @media (max-width: 500px) {
-  header {
+  .form-message {
     width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .form-message {
+    width: 80%;
+    background-color: red;
   }
 }
 .form-container {
@@ -360,6 +382,7 @@ header {
   background-color: #f0f8ff;
   border: 1px solid #000;
   border-radius: 5px;
+  margin-top: 5%;
 }
 @media (max-width: 800px) {
   .form-container {
@@ -408,6 +431,9 @@ header {
   margin: 1%;
   padding: 1%;
   border-radius: 5px;
+}
+.form-container form .input #email {
+  width: 100%;
 }
 @media (max-width: 500px) {
   .form-container form .input {
