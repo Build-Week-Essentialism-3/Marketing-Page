@@ -9,7 +9,6 @@
         .quoteStyle(center, 50px);
         .quoteShaping(75%, 1px solid black, 3% 0, 3% 0);
     }
-    
 }
 
 .About {
@@ -22,8 +21,8 @@
         width: 100%;
         display: flex;
         justify-content: space-evenly;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        border-top: @blackBorder;
+        border-bottom: @blackBorder;
         padding: 3% 0;
 
         img {
@@ -90,6 +89,9 @@
                 // display: none;
                 opacity: 0%;
             }//phone closes here
+        }//phone closes here
+        @media @desktop {
+            width: 90%;
         }
     }
 
