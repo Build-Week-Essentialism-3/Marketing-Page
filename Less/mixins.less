@@ -1,4 +1,19 @@
 
+.displayFlex(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.styleInputs(){
+    border: 1px solid @black;
+    border-radius: 5px;
+    
+}
+
+
+
 // navigation mixins
 .navText(@decoration, @color, @background){
     text-decoration: @decoration;
@@ -46,3 +61,4 @@
     border-radius: @bRadius;
     border: @border;
 }
+
